@@ -4,6 +4,10 @@ Credentials:
 	CentOS Username/Password: analyst/bsides
 	Fleet Username/Password: GuerillaBT/bsid3s!
 
+Update Workshop Materials:
+        
+	$ update-workshop
+
 Docker Aliases:
 
 	Docker isn't hard, but it is hard to learn when you're trying to wrap your head around ELK...
