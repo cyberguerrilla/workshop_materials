@@ -1,0 +1,51 @@
+Docker isn't hard, but it is hard to learn when you're trying to wrap your head around ELK...
+
+So we aliased a few commands to make your life easier.
+If you'd like to see what these are actually doing, just cat the .bashrc file for either the analyst account, or the root account.
+
+
+List all Docker containers and view their state (running, exited, etc):
+$ containers
+
+
+Get a shell on one of the running containers:
+$ <container-name>
+
+	e.g.:
+		$ es01
+		$ logstash
+		$ kibana
+
+
+Start a single container:
+$ start-<container-name>
+
+	e.g.:
+		$ start-es01
+		$ start-logstash
+		$ start-kibana
+
+
+Stop a single container:
+$ stop-<container-name>
+
+	e.g.:
+		$ stop-es01
+		$ stop-logstash
+		$ stop-kibana
+
+
+Start all ELK containers:
+$ start-elk
+
+
+Stop all ELK containers:
+$ stop-elk
+
+
+Start all osquery (Kolide Fleet) containers:
+$ start-osquery
+
+
+Stop all osquery (Kolide Fleet) containers:
+$ stop-osquery
